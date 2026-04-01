@@ -1,0 +1,22 @@
+
+# VS Code specific files
+.vscode/
+*.code-workspace
+
+# Environment variables
+.env
+*.env
+.env.*
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+
+# Docker
+*.env
+.docker/
