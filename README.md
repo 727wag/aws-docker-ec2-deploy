@@ -47,10 +47,10 @@ Para resolver isso de forma segura (seguindo o princípio do privilégio mínimo
 
 Se você quiser recriar este laboratório, aqui está o caminho das pedras que eu utilizei:
 
-# Build da imagem (Versão 1.1)
+## Build da imagem (Versão 1.1)
 docker build -t meu-site:v1.1 .
 
-# Rodando localmente para validar (Acessível em localhost:8080)
+## Rodando localmente para validar (Acessível em localhost:8080)
 docker run -d -p 8080:80 --name teste-local meu-site:v1.1
 
 ### Deploy na Nuvem: ECR e EC2
@@ -62,13 +62,16 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 docker tag meu-site:v1.1 [ID_DA_SUA_IMAGEM_ECR]:v1.1
 
 docker push [ID_DA_SUA_IMAGEM_ECR]:v1.1
-
+```
 **3. O Deploy na Máquina Virtual (EC2):**
-**Após conectar na EC2 via protocolo SSH (.pem), executei o container mapeando a porta web oficial:
+Após conectar na EC2 via protocolo SSH (.pem), executei o container mapeando a porta web oficial:
 
 docker run -d -p 80:80 --name site-prod [ID_DA_SUA_IMAGEM_ECR]:v1.1
 
-**📸 Evidências do Laboratório
+## 📸 Evidências do Laboratório
 
 Aqui estão os registros do ambiente rodando com sucesso antes do decommissioning (desligamento por controle de custos).
 O Site no Ar (Acesso Externo)
+<img width="1651" height="201" alt="Screenshot_1" src="https://github.com/user-attachments/assets/9bf8d643-6f5d-4e22-ab90-38dcc11113d3" />
+<img width="1902" height="1001" alt="Screenshot_3" src="https://github.com/user-attachments/assets/b797a872-0c74-4aba-90c0-65e3c33fb984" />
+
