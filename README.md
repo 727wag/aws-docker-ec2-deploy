@@ -75,3 +75,6 @@ O Site no Ar (Acesso Externo)
 <img width="1651" height="201" alt="Screenshot_1" src="https://github.com/user-attachments/assets/9bf8d643-6f5d-4e22-ab90-38dcc11113d3" />
 <img width="1902" height="1001" alt="Screenshot_3" src="https://github.com/user-attachments/assets/b797a872-0c74-4aba-90c0-65e3c33fb984" />
 
+### ⭐ Projeto da Maria Lazara:
+https://www.linkedin.com/in/marialazaradev/
+https://www.youtube.com/@marialazaradev
